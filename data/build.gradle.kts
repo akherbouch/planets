@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.hiltAndroid)
+    kotlin("plugin.serialization")
+    kotlin("kapt")
 }
 
 android {
@@ -34,9 +37,25 @@ android {
 
 dependencies {
 
+    implementation(project(":domain"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation (libs.hilt.android)
+    kapt (libs.hilt.compiler)
+
+    // retrofit
+    implementation (libs.retrofit)
+    implementation (libs.okhttp)
+    implementation (libs.retrofit.kotlinx.serialization)
+    implementation(libs.kotlinx.serialization)
+
+    // room
+    implementation (libs.androidx.room.runtime)
+    kapt (libs.androidx.room.compiler)
+    implementation (libs.androidx.room.ktx)
+    implementation (libs.androidx.room.paging)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
