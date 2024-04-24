@@ -1,6 +1,6 @@
 package com.ayoub.jpmcodingexercise.data.di
 
-import com.ayoub.jpmcodingexercise.data.C
+import com.ayoub.jpmcodingexercise.data.Constants
 import com.ayoub.jpmcodingexercise.data.network.NetworkUtil
 import com.ayoub.jpmcodingexercise.data.network.PlanetApiService
 import dagger.Module
@@ -22,7 +22,7 @@ object NetworkModule {
     @Provides
     fun providesRetrofit(): Retrofit =
         Retrofit.Builder()
-            .baseUrl(C.BASE_URL)
+            .baseUrl(Constants.BASE_URL)
             .addConverterFactory(
                 Json.asConverterFactory(
                     "application/json; charset=UTF8".toMediaType()))

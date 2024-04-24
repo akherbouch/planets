@@ -14,11 +14,12 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class PlanetViewModel @Inject constructor(
+class PlanetsViewModel @Inject constructor(
     private val getPlanetsUseCase: GetPlanetsUseCase
-) : ViewModel(){
-    private val _planetsState: MutableStateFlow<PagingData<Planet>> = MutableStateFlow(value = PagingData.empty())
-    val planetsState: StateFlow<PagingData<Planet>> get() = _planetsState
+) : ViewModel() {
+
+    private val _planets = MutableStateFlow<PagingData<Planet>>(value = PagingData.empty())
+    val planets: StateFlow<PagingData<Planet>> get() = _planets
 
     init {
         loadPlanets()
@@ -30,7 +31,7 @@ class PlanetViewModel @Inject constructor(
                 .distinctUntilChanged()
                 .cachedIn(viewModelScope)
                 .collect{
-                    _planetsState.value = it
+                    _planets.value = it
                 }
         }
     }
