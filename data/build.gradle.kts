@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.kspAndroid)
     alias(libs.plugins.hiltAndroid)
+    kotlin("plugin.serialization")
     kotlin("kapt")
 }
 
@@ -43,6 +44,10 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation (libs.hilt.android)
     kapt (libs.hilt.compiler)
+    implementation (libs.retrofit)
+    implementation (libs.okhttp)
+    implementation (libs.retrofit.kotlinx.serialization)
+    implementation(libs.kotlinx.serialization)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
