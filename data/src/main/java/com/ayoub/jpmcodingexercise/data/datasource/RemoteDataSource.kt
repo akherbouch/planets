@@ -1,4 +1,4 @@
-package com.ayoub.jpmcodingexercise.data.datasource.remote
+package com.ayoub.jpmcodingexercise.data.datasource
 
 
 import com.ayoub.jpmcodingexercise.data.model.PlanetResponse
