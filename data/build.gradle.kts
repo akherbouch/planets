@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    alias(libs.plugins.kspAndroid)
     alias(libs.plugins.hiltAndroid)
     kotlin("plugin.serialization")
     kotlin("kapt")
@@ -53,7 +52,7 @@ dependencies {
 
     // room
     implementation (libs.androidx.room.runtime)
-    ksp (libs.androidx.room.compiler)
+    kapt (libs.androidx.room.compiler)
     implementation (libs.androidx.room.ktx)
     implementation (libs.androidx.room.paging)
 

@@ -26,9 +26,4 @@ object DatabaseModule {
         ).build()
     }
 
-    @Provides
-    fun providePlanetDao(database: PlanetDatabase): PlanetDao {
-        return database.planetDao()
-    }
-
 }

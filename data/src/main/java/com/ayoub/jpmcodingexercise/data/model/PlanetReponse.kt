@@ -14,5 +14,5 @@ data class PlanetResponse(
     @SerialName("previous")
     val previous: String?,
     @SerialName("results")
-    val results: List<PlantDTO>
+    val results: List<PlanetDTO>
 )

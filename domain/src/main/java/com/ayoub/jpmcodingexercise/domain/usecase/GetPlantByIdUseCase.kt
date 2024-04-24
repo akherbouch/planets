@@ -10,5 +10,6 @@ class GetPlantByIdUseCase @Inject constructor(
     private val repository: PlanetRepository
 ) : BaseUseCase<String, Flow<Planet>> {
 
-    override suspend fun invoke(id: String): Flow<Planet> = repository.getPlanet(id)
+    override suspend operator fun invoke(input: String): Flow<Planet> =
+        repository.getPlanet(input)
 }

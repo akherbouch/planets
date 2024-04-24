@@ -1,6 +1,7 @@
 package com.ayoub.jpmcodingexercise.data.di
 
 import com.ayoub.jpmcodingexercise.data.C
+import com.ayoub.jpmcodingexercise.data.network.NetworkUtil
 import com.ayoub.jpmcodingexercise.data.network.PlanetApiService
 import dagger.Module
 import dagger.Provides
@@ -25,6 +26,7 @@ object NetworkModule {
             .addConverterFactory(
                 Json.asConverterFactory(
                     "application/json; charset=UTF8".toMediaType()))
+            .client(NetworkUtil.trustAllOkHttpClient())
             .build()
 
     @Singleton

@@ -6,7 +6,9 @@ import kotlinx.serialization.Serializable
 
 @Keep
 @Serializable
-data class PlantDTO(
+data class PlanetDTO(
+    @SerialName("name")
+    val name: String,
     @SerialName("climate")
     val climate: String,
     @SerialName("created")
@@ -19,8 +21,6 @@ data class PlantDTO(
     val films: List<String>,
     @SerialName("gravity")
     val gravity: String,
-    @SerialName("name")
-    val name: String,
     @SerialName("orbital_period")
     val orbitalPeriod: String,
     @SerialName("population")
