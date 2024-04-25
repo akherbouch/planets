@@ -2,6 +2,60 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="PlanetApiServiceTest">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\ayoub\.android\avd\Pixel_7_API_33.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-25T00:50:45.135405100Z" />
+        </State>
+      </entry>
+      <entry key="PlanetApiServiceTest (1)">
+        <State />
+      </entry>
+      <entry key="PlanetDaoTest">
+        <State />
+      </entry>
+      <entry key="PlanetDetailScreenTest">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\ayoub\.android\avd\Pixel_4_API_32.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-25T01:17:43.016454100Z" />
+        </State>
+      </entry>
+      <entry key="PlanetScreenTest">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\ayoub\.android\avd\Pixel_7_API_33.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-24T23:55:04.609836600Z" />
+        </State>
+      </entry>
       <entry key="app">
         <State />
       </entry>
