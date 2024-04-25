@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">JpmCodingExercise</string>
+    <string name="fetching">Fetching</string>
+    <string name="name">Name</string>
+    <string name="terrain">Terrain</string>
+    <string name="climate">Climate</string>
+    <string name="rotation_period">Rotation Period</string>
+    <string name="orbital_period">Orbital Period</string>
+    <string name="diameter">Diameter</string>
+    <string name="gravity">Gravity</string>
+    <string name="surface_water">Surface Water</string>
+    <string name="population">Population</string>
+    <string name="retry">Retry</string>
+    <string name="fetching_planets_error">Error: We cannot fetch planets</string>
+    <string name="append_planets_error">Error: We cannot add new planets</string>
+    <string name="planets_screen_title">All Planets</string>
+    <string name="planet_details_screen_title">Planet Details</string>
 </resources>

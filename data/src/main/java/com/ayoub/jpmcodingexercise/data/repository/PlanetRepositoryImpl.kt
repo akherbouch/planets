@@ -4,13 +4,12 @@ import androidx.paging.ExperimentalPagingApi
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.ayoub.jpmcodingexercise.data.C.PAGE_SIZE
+import com.ayoub.jpmcodingexercise.data.Constants.PAGE_SIZE
 import com.ayoub.jpmcodingexercise.data.database.PlanetDatabase
 import com.ayoub.jpmcodingexercise.data.network.PlanetApiService
 import com.ayoub.jpmcodingexercise.domain.model.Planet
 import com.ayoub.jpmcodingexercise.domain.repository.PlanetRepository
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.map
 
 class PlanetRepositoryImpl (
     private val db: PlanetDatabase,
