@@ -19,7 +19,7 @@ class PlanetScreenTest {
     val rule = createAndroidComposeRule<ComponentActivity>()
 
     @Test
-    fun showData(){
+    fun test_display_name(){
         rule.setContent {
             val data= flowOf(PagingData.from(planets)).collectAsLazyPagingItems()
             PlanetsScreen(planetPagingItems = data, onPlanetClick = {})
@@ -28,7 +28,7 @@ class PlanetScreenTest {
     }
 
     @Test
-    fun showError(){
+    fun test_display_error(){
         rule.setContent {
             val data= flowOf(
                 PagingData.from(
@@ -47,7 +47,7 @@ class PlanetScreenTest {
     }
 
     @Test
-    fun showLoading(){
+    fun test_display_loading(){
         rule.setContent {
             val data= flowOf(
                 PagingData.from(

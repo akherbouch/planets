@@ -14,19 +14,19 @@ class PlanetDetailScreenTest {
     private val testPlanet = planets.first()
 
     @Test
-    fun displayName() {
+    fun test_display_name() {
         rule.setContent { PlanetDetailScreen(planet = testPlanet, onBackClick = {}) }
         rule.onNodeWithText(testPlanet.name!!).assertExists()
     }
 
     @Test
-    fun displayRotationPeriod() {
+    fun test_display_rotation_period() {
         rule.setContent { PlanetDetailScreen(planet = testPlanet, onBackClick = {}) }
         rule.onNodeWithText(testPlanet.rotationPeriod!!).assertExists()
     }
 
     @Test
-    fun displayOrbitalPeriod() {
+    fun test_display_orbital_period() {
         rule.setContent { PlanetDetailScreen(planet = testPlanet, onBackClick = {}) }
         rule.onNodeWithText(testPlanet.orbitalPeriod!!).assertExists()
     }
