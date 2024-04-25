@@ -14,5 +14,5 @@
     <string name="fetching_planets_error">Error: We cannot fetch planets</string>
     <string name="append_planets_error">Error: We cannot add new planets</string>
     <string name="planets_screen_title">All Planets</string>
-    <string name="planet_detials_screen_title">Planet Details</string>
+    <string name="planet_details_screen_title">Planet Details</string>
 </resources>

@@ -45,14 +45,14 @@ fun PlanetDetailScreenRoute(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PlanetDetailScreen(
+fun PlanetDetailScreen(
     planet: Planet,
     onBackClick: () -> Unit,
 ) {
     Scaffold(
         topBar = {
             TopAppBar(title = {
-                Text(text = stringResource(id = R.string.planet_detials_screen_title))
+                Text(text = stringResource(id = R.string.planet_details_screen_title))
             },
                 navigationIcon = {
                     IconButton(onClick = { onBackClick.invoke()}) {

@@ -35,7 +35,7 @@ fun PlanetsScreenRoute(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PlanetsScreen(
+fun PlanetsScreen(
     planetPagingItems: LazyPagingItems<Planet>,
     onPlanetClick: (String) -> Unit,
 ) {
