@@ -10,6 +10,8 @@ import javax.net.ssl.TrustManager
 import javax.net.ssl.X509TrustManager
 
 object NetworkUtil {
+
+    // OkHttpClient to bypass swapi.dev ssl current issue
     fun trustAllOkHttpClient(): OkHttpClient {
         val trustAllCerts = arrayOf<TrustManager>(
             object : X509TrustManager {

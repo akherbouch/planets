@@ -49,6 +49,10 @@ dependencies {
     implementation (libs.okhttp)
     implementation (libs.retrofit.kotlinx.serialization)
     implementation(libs.kotlinx.serialization)
+    testImplementation(libs.okhttp3.mockwebserver)
+    androidTestImplementation(libs.okhttp3.mockwebserver)
+    testImplementation(libs.kotlinx.coroutines.test)
+    androidTestImplementation(libs.kotlinx.coroutines.test)
 
     // room
     implementation (libs.androidx.room.runtime)
@@ -56,7 +60,10 @@ dependencies {
     implementation (libs.androidx.room.ktx)
     implementation (libs.androidx.room.paging)
 
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.kotlin.test.junit)
+
 }
